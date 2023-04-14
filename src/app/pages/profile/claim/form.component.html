@@ -1,0 +1,82 @@
+<!-- claim form -->
+<div
+	class="full-banner position-fixed translate-middle top-50 start-50 w-100 h-100"
+>
+	<div class="navbar-replace mb-5"></div>
+	<div class="container d-flex justify-content-center h-100 pb-5">
+		<div class="card w-50 h-75 pb-4">
+			<div class="card-body">
+				<div class="d-flex justify-content-end mb-2">
+					<button
+						class="btn btn-close show-tab"
+						id="close-claim-form"
+						data-tab="claim-form"
+					></button>
+				</div>
+				<form
+					action="#/"
+					class="form-group"
+					method="post"
+					id="contactForm"
+					novalidate="novalidate"
+				>
+					<div class="row">
+						<div class="col-sm-3">
+							<label for="form-control"> Pedido Id </label>
+						</div>
+						<div class="col-sm-9">
+							<input
+								class="form-control"
+								name="order-id"
+								id="order-id"
+								type="text"
+								readonly
+								placeholder="#NZ1563"
+							/>
+						</div>
+					</div>
+					<br />
+					<div class="row">
+						<div class="col-sm-3">
+							<label for="form-control"> Estado pedido </label>
+						</div>
+						<div class="col-sm-9">
+							<input
+								class="form-control"
+								name="order-state"
+								id="order-state"
+								type="text"
+								readonly
+								placeholder="Entregado"
+							/>
+						</div>
+					</div>
+					<br />
+					<div class="form-group">
+						<select class="form-control">
+							<option selected>Tipo de reclamo</option>
+							<option value="1">Devolución</option>
+							<option value="2">Envio incompleto</option>
+							<option value="3">Pedido no entregado</option>
+						</select>
+					</div>
+					<br />
+					<div class="form-group">
+						<textarea
+							class="form-control different-control w-100"
+							name="message"
+							id="message"
+							cols="30"
+							rows="5"
+							placeholder="Escriba un breve resumen de su motivo de contacto"
+						></textarea>
+					</div>
+					<br />
+					<div class="form-group text-center text-md-right">
+						<button type="submit" class="button button--active">Enviar</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

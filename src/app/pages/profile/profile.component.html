@@ -1,0 +1,44 @@
+<div
+	class="tab-pane fade"
+	id="profile"
+	role="tabpanel"
+	aria-labelledby="profile-tab"
+>
+	<section class="container py-5">
+		<div
+			class="row"
+			id="profile-general"
+			role="tabpanel"
+			aria-labelledby="profile-general-tab"
+		>
+			<div class="col-lg-4">
+				<div class="card mb-4">
+					<div class="card-body text-center">
+                        <app-profile-user-card></app-profile-user-card>
+					</div>
+				</div>
+				<div class="card mb-4 mb-lg-0">
+					<div class="card-body p-0">
+                        <app-profile-methods-payment></app-profile-methods-payment>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-8">
+				<div class="card mb-4">
+					<div class="card-body">
+                        <app-profile-user-data></app-profile-user-data>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="card mb-4 mb-md-0 p-2">
+							<div class="card-body">
+                                <app-profile-recently-orders></app-profile-recently-orders>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>

@@ -1,0 +1,200 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<header class="header_area">
+	<div class="main_menu">
+		<nav class="navbar navbar-expand-lg fixed-top bg-white">
+			<div class="container">
+				<a class="navbar-brand logo_h" href="index.html"
+					><img src="/src/assets/img/logo.png" alt=""
+				/></a>
+				<div
+					class="collapse navbar-collapse offset justify-content-around"
+					id="navbarSupportedContent"
+				>
+					<ul class="nav navbar-nav menu_nav ml-auto mr-auto">
+						<li class="nav-item">
+							<a class="nav-link show-view" href="#"
+							routerLink="/home"
+							routerLinkActive="active"
+							ariaCurrentWhenActive="page"
+							>Inicio</a>
+						</li>
+						<li class="nav-item submenu dropdown">
+							<a
+								href="#"
+								class="nav-link dropdown-toggle"
+								data-toggle="dropdown"
+								role="button"
+								aria-haspopup="true"
+								aria-expanded="false"
+								>Productos</a
+							>
+							<ul class="dropdown-menu list-group">
+								<li class="nav-item">
+									<a class="nav-link show-view" href="#"
+									routerLink="/catalog"
+									routerLinkActive="active"
+									ariaCurrentWhenActive="page"
+										>Catalogo</a
+									>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link"
+										href="#"
+										routerLink="/product"
+										routerLinkActive="active"
+										ariaCurrent="page"
+										>Visualizar</a
+									>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link show-view" href="#"
+									routerLink="/payment"
+									routerLinkActive="active"
+									ariaCurrentWhenActive="page"
+									>Pagar</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item submenu dropdown">
+							<a
+								href="#"
+								class="nav-link dropdown-toggle"
+								>Cuenta</a
+							>
+							<ul class="dropdown-menu">
+								<li class="nav-item">
+									<a
+										class="nav-link"
+										href="#"
+										routerLink="/profile"
+										routerLinkActive="active"
+										ariaCurrentWhenActive="page"
+										>Perfil</a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										class="nav-link"
+										href="#"
+										routerLink="/profile/edit"
+										routerLinkActive="active"
+										ariaCurrent="page"
+										>Editar Perfil</a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										class="nav-link"
+										href="#"
+										routerLink="/profile/tracking"
+										routerLinkActive="active"
+										ariaCurrent="page"
+										>Traking</a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										class="nav-link"
+										href="#"
+										routerLink="/profile/claims"
+										routerLinkActive="active"
+										ariaCurrent="page"
+										>Reclamos</a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										class="nav-link"
+										href="#"
+										routerLink="/account"
+										routerLinkActive="active"
+										ariaCurrent="page"
+										>Iniciar Sesion</a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										class="nav-link"
+										href="#"
+										routerLink="/account/register"
+										routerLinkActive="active"
+										ariaCurrent="page"
+										>Registrarse</a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										class="nav-link"
+										href="#"
+										routerLink="/cart"
+										routerLinkActive="active"
+										ariaCurrent="page"
+										>Carrito de compra</a
+									>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link show-view"
+								href="#"
+								routerLink="/contact"
+								routerLinkActive="active"
+								ariaCurrent="page"
+								>Contacto</a
+							>
+						</li>
+					</ul>
+					<ul class="nav-shop">
+						<li class="nav-item submenu dropdown">
+							<a
+								href="#"
+								class="nav-link"
+								data-bs-toggle="dropdown"
+								role="button"
+								aria-haspopup="true"
+								aria-expanded="false"
+								><i class="ti-search"></i
+							></a>
+							<ul class="dropdown-menu">
+								<li class="nav-item ms-3 mb-2">
+									<div class="input-group filter-bar-search">
+										<input type="text" placeholder="Buscar producto" />
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<button>
+								<a 
+									href="#"
+									routerLink="/cart"
+									routerLinkActive="active"
+									ariaCurrent="page">
+									<i class="ti-shopping-cart"></i>
+									<span class="nav-shop__circle">3</span>
+								</a>
+							</button>
+						</li>
+						<li class="nav-item">
+							<a
+								class="button button-header"
+								href="#"
+								routerLink="/account"
+								routerLinkActive="active"
+								ariaCurrent="page"
+								>Iniciar Sesion</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+</header>
+
+<main class="site-main tab-content">
+	<div class="navbar-replace"></div>
+	<!-- content page route -->
+	<router-outlet></router-outlet>
+</main>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->

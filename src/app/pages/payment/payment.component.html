@@ -1,0 +1,337 @@
+<!-- pay -->
+<section class="checkout_area section-margin--small">
+	<div class="container">
+		<div class="billing_details">
+			<div class="row">
+				<div hidden class="col-lg-8">
+					<h3>Billing Details</h3>
+					<form
+						class="row contact_form"
+						action="#"
+						method="post"
+						novalidate="novalidate"
+					>
+						<div class="col-md-6 form-group p_star">
+							<input type="text" class="form-control" id="first" name="name" />
+							<span class="placeholder" data-placeholder="First name"></span>
+						</div>
+						<div class="col-md-6 form-group p_star">
+							<input type="text" class="form-control" id="last" name="name" />
+							<span class="placeholder" data-placeholder="Last name"></span>
+						</div>
+						<div class="col-md-12 form-group">
+							<input
+								type="text"
+								class="form-control"
+								id="company"
+								name="company"
+								placeholder="Company name"
+							/>
+						</div>
+						<div class="col-md-6 form-group p_star">
+							<input
+								type="text"
+								class="form-control"
+								id="number"
+								name="number"
+							/>
+							<span class="placeholder" data-placeholder="Phone number"></span>
+						</div>
+						<div class="col-md-6 form-group p_star">
+							<input
+								type="text"
+								class="form-control"
+								id="email"
+								name="compemailany"
+							/>
+							<span class="placeholder" data-placeholder="Email Address"></span>
+						</div>
+						<div class="col-md-12 form-group p_star">
+							<select class="country_select">
+								<option value="1">Country</option>
+								<option value="2">Country</option>
+								<option value="4">Country</option>
+							</select>
+						</div>
+						<div class="col-md-12 form-group p_star">
+							<input type="text" class="form-control" id="add1" name="add1" />
+							<span
+								class="placeholder"
+								data-placeholder="Address line 01"
+							></span>
+						</div>
+						<div class="col-md-12 form-group p_star">
+							<input type="text" class="form-control" id="add2" name="add2" />
+							<span
+								class="placeholder"
+								data-placeholder="Address line 02"
+							></span>
+						</div>
+						<div class="col-md-12 form-group p_star">
+							<input type="text" class="form-control" id="city" name="city" />
+							<span class="placeholder" data-placeholder="Town/City"></span>
+						</div>
+						<div class="col-md-12 form-group p_star">
+							<select class="country_select">
+								<option value="1">District</option>
+								<option value="2">District</option>
+								<option value="4">District</option>
+							</select>
+						</div>
+						<div class="col-md-12 form-group">
+							<input
+								type="text"
+								class="form-control"
+								id="zip"
+								name="zip"
+								placeholder="Postcode/ZIP"
+							/>
+						</div>
+						<div class="col-md-12 form-group">
+							<div class="creat_account">
+								<input type="checkbox" id="f-option2" name="selector" />
+								<label for="f-option2">Create an account?</label>
+							</div>
+						</div>
+						<div class="col-md-12 form-group mb-0">
+							<div class="creat_account">
+								<h3>Shipping Details</h3>
+								<input type="checkbox" id="f-option3" name="selector" />
+								<label for="f-option3">Ship to a different address?</label>
+							</div>
+							<textarea
+								class="form-control"
+								name="message"
+								id="message"
+								rows="1"
+								placeholder="Order Notes"
+							></textarea>
+						</div>
+					</form>
+				</div>
+				<div class="col-lg-8">
+					<div class="cart_inner bg-white">
+						<div class="table-responsive">
+							<table class="table">
+								<thead>
+									<tr>
+										<th scope="col">Producto</th>
+										<th scope="col">Precio</th>
+										<th scope="col">Cantidad</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<div class="d-flex">
+												<div class="d-flex" style="width: 180px; height: 90px">
+													<img src="img/cart/cart1.png" alt="" />
+												</div>
+												<div class="media-body align-self-center">
+													<p>Six pack de cervezas</p>
+												</div>
+											</div>
+										</td>
+										<td>
+											<h5>$25.000</h5>
+										</td>
+										<td>
+											<div class="product_count">
+												<input
+													type="text"
+													name="qty"
+													id="sst"
+													maxlength="12"
+													value="1"
+													title="Quantity:"
+													class="input-text qty"
+												/>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="d-flex">
+												<div class="d-flex" style="width: 180px; height: 90px">
+													<img src="img/cart/cart2.png" alt="" />
+												</div>
+												<div class="media-body align-self-center">
+													<p>Bebida gaseosa en latada sabor limonada</p>
+												</div>
+											</div>
+										</td>
+										<td>
+											<h5>$4.5000</h5>
+										</td>
+										<td>
+											<div class="product_count">
+												<input
+													type="text"
+													name="qty"
+													id="sst"
+													maxlength="12"
+													value="3"
+													title="Quantity:"
+													class="input-text qty"
+												/>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="d-flex">
+												<div class="d-flex" style="width: 180px; height: 90px">
+													<img src="img/cart/cart3.png" alt="" />
+												</div>
+												<div class="media-body align-self-center">
+													<p>Agua embotellada de manantial</p>
+												</div>
+											</div>
+										</td>
+										<td>
+											<h5>$3.000</h5>
+										</td>
+										<td>
+											<div class="product_count">
+												<input
+													type="text"
+													name="qty"
+													id="sst"
+													maxlength="12"
+													value="1"
+													title="Quantity:"
+													class="input-text qty"
+												/>
+											</div>
+										</td>
+									</tr>
+									<tr class="bottom_button">
+										<td></td>
+										<td></td>
+										<td>
+											<div class="cupon_text d-flex align-items-center">
+												<input type="text" placeholder="codigo" />
+												<a class="button" href="#">Agregar cupón</a>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="order_box">
+						<h2>Your Order</h2>
+						<ul class="list">
+							<li>
+								<a href="#"
+									><h4>Product <span>Total</span></h4></a
+								>
+							</li>
+							<li>
+								<a href="#"
+									>Fresh Blackberry <span class="middle">x 02</span>
+									<span class="last">$720.00</span></a
+								>
+							</li>
+							<li>
+								<a href="#"
+									>Fresh Tomatoes <span class="middle">x 02</span>
+									<span class="last">$720.00</span></a
+								>
+							</li>
+							<li>
+								<a href="#"
+									>Fresh Brocoli <span class="middle">x 02</span>
+									<span class="last">$720.00</span></a
+								>
+							</li>
+						</ul>
+						<ul class="list list_2">
+							<li>
+								<a href="#">Subtotal <span>$2160.00</span></a>
+							</li>
+							<li>
+								<a href="#">Shipping <span>Flat rate: $50.00</span></a>
+							</li>
+							<li>
+								<a href="#">Total <span>$2210.00</span></a>
+							</li>
+						</ul>
+						<div class="payment_item active">
+							<div class="radion_btn">
+								<input type="radio" id="f-option6" name="selector" />
+								<label for="f-option6">Paypal </label>
+								<img src="img/product/card.jpg" alt="" />
+								<div class="check"></div>
+							</div>
+							<p>
+								Pay via PayPal; you can pay with your credit card if you don’t
+								have a PayPal account.
+							</p>
+						</div>
+						<div class="text-center">
+							<a class="button button-paypal show-tab" data-tab="check-banner">
+								Pagar
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- check banner -->
+<div
+	class="tab full-banner position-fixed translate-middle top-50 start-50 w-100 h-100"
+	id="check-banner"
+	role="tabpanel"
+>
+	<div class="navbar-replace mb-5"></div>
+	<div class="container d-flex justify-content-center h-100 pb-5">
+		<div class="card h-50 w-25">
+			<div class="card-body text-center">
+				<svg
+					class="checkmark"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 52 52"
+				>
+					<circle
+						class="checkmark__circle"
+						cx="26"
+						cy="26"
+						r="25"
+						fill="none"
+					/>
+					<path
+						class="checkmark__check"
+						fill="none"
+						d="M14.1 27.2l7.1 7.2 16.7-16.8"
+					/>
+				</svg>
+				<br />
+				<h5 class="my-3">Pedido pagado exitosamente</h5>
+				<br />
+				<div class="d-flex justify-content-center mb-2">
+					<button
+						type="button"
+						class="btn btn-secondary bg-p show-tab"
+						id="close-check-banner"
+						data-tab="check-banner"
+					>
+						Aceptar
+					</button>
+					<button
+						type="button"
+						class="btn show-view ms-2"
+						onclick="$('#close-check-banner').click()"
+						data-view="traking"
+					>
+						Ver tu pedido
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,156 @@
+<!-- tracking history  -->
+<div class="row d-flex justify-content-between">
+    <div class="col-sm-9">
+        <div class="input-group filter-bar-search">
+            <input type="text" placeholder="Buscar por Id" />
+            <div class="input-group-append">
+                <button type="button" class="h-100">
+                    <i class="ti-search"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <button
+            type="button"
+            class="btn btn-secondary mt-2"
+            id="profile-general-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#profile-general"
+            role="tab"
+        >
+            <span>
+                <i class="ti-back-left"></i>
+                Volver
+            </span>
+        </button>
+    </div>
+</div>
+<ul class="nav nav-tabs nav-tabs-custom mb-4">
+    <li class="nav-item">
+        <a class="nav-link fw-bold p-3 active" href="#"
+            >Historial</a
+        >
+    </li>
+    <li class="nav-item">
+        <a class="nav-link p-3 fw-bold" href="#"
+            >Pedidos en proceso</a
+        >
+    </li>
+    <li class="nav-item">
+        <a class="nav-link p-3 fw-bold" href="#"
+            >Envios entregados</a
+        >
+    </li>
+    <li class="nav-item">
+        <a class="nav-link p-3 fw-bold" href="#"
+            >Envíos cancelados</a
+        >
+    </li>
+</ul>
+<div class="container-scroll" style="max-height: 500px">
+    <table
+        class="table table-responsive table-centered table-hover datatable dt-responsive nowrap"
+    >
+        <thead class="thead-light">
+            <tr>
+                <th>Orden Id</th>
+                <th>Fecha</th>
+                <th>Total</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="badge-soft-info clickable-row">
+                <td>
+                    <a
+                        href="javascript: void(0);"
+                        class="text-dark fw-bold"
+                        >#NZ1563</a
+                    >
+                </td>
+                <td>28 Mar, 2020</td>
+                <td>$164</td>
+                <td>
+                    <div
+                        class="badge badge-soft-warning text-muted font-size-12"
+                    >
+                        En proceso
+                    </div>
+                </td>
+            </tr>
+            <tr class="clickable-row">
+                <td>
+                    <a
+                        href="javascript: void(0);"
+                        class="text-dark fw-bold"
+                        >#NZ1564</a
+                    >
+                </td>
+                <td>28 Mar, 2020</td>
+                <td>$141</td>
+                <td>
+                    <div
+                        class="badge badge-soft-success text-muted font-size-12"
+                    >
+                        Entregado
+                    </div>
+                </td>
+            </tr>
+            <tr class="clickable-row">
+                <td>
+                    <a
+                        href="javascript: void(0);"
+                        class="text-dark fw-bold"
+                        >#NZ15632</a
+                    >
+                </td>
+                <td>27 Mar, 2020</td>
+                <td>$154</td>
+                <td>
+                    <div
+                        class="badge badge-soft-success text-muted font-size-12"
+                    >
+                        Entregado
+                    </div>
+                </td>
+            </tr>
+            <tr class="clickable-row">
+                <td>
+                    <a
+                        href="javascript: void(0);"
+                        class="text-dark fw-bold"
+                        >#NZ15632</a
+                    >
+                </td>
+                <td>27 Mar, 2020</td>
+                <td>$154</td>
+                <td>
+                    <div
+                        class="badge badge-soft-success text-muted font-size-12"
+                    >
+                        Entregado
+                    </div>
+                </td>
+            </tr>
+            <tr class="clickable-row">
+                <td>
+                    <a
+                        href="javascript: void(0);"
+                        class="text-dark fw-bold"
+                        >#NZ15632</a
+                    >
+                </td>
+                <td>27 Mar, 2020</td>
+                <td>$154</td>
+                <td>
+                    <div
+                        class="badge badge-soft-success text-muted font-size-12"
+                    >
+                        Entregado
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
