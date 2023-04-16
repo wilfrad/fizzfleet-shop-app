@@ -6,6 +6,6 @@ import { ProductPost } from './../../../models/product/product-post';
 	templateUrl: './product-post.component.html',
 })
 
-export class ProductPostComponent{
-    @Input() post!: ProductPost;
+export class ProductPostComponent {
+	@Input() post!: ProductPost;
 }

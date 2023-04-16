@@ -568,7 +568,6 @@ a {
   color: #384aeb;
 }
 .offer {
-  background: url("../img/home/parallax-bg.png") right center no-repeat;
   background-size: cover;
 }
 @media (min-width: 1200px) {

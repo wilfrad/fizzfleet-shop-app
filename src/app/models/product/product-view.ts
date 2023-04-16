@@ -1,6 +1,3 @@
-import { Image } from './image';
-import { Spec } from './spec';
-
 export class ProductView {
     postId: string = '';
     title: string = '';
@@ -10,4 +7,14 @@ export class ProductView {
     description: string = '';
     active: boolean = false;
     specs: Spec[] = [];
+}
+
+export class Image {
+    coverUrl!: string;
+    thumbnailUrl!: string;
+}
+
+export class Spec {
+    name: string = '';
+    value: string = '';
 }

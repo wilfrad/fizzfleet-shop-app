@@ -13,7 +13,7 @@
 				"build": {
 					"builder": "@angular-devkit/build-angular:browser",
 					"options": {
-						"outputPath": "dist/fizzfleet-shop-app",
+						"outputPath": "dist/fizzfleetShopApp/browser",
 						"index": "src/index.html",
 						"main": "src/main.ts",
 						"polyfills": ["zone.js"],
@@ -61,12 +61,7 @@
 						"development": {
 							"browserTarget": "fizzfleetShopApp:build:development"
 						}
-					},
-          "options": {
-						"browserTarget": "fizzfleetShopApp:build",
-						"proxyConfig": "src/assets/proxy.config.json"
-					},
-					"defaultConfiguration": "development"
+					}
 				},
 				"extract-i18n": {
 					"builder": "@angular-devkit/build-angular:extract-i18n",
@@ -83,7 +78,60 @@
 						"styles": ["src/styles.css"],
 						"scripts": []
 					}
-				}
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/fizzfleetShopApp/server",
+            "main": "server.ts",
+            "tsConfig": "tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media"
+            },
+            "development": {
+              "optimization": false,
+              "sourceMap": true,
+              "extractLicenses": false,
+              "vendorChunk": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve-ssr": {
+          "builder": "@nguniversal/builders:ssr-dev-server",
+          "configurations": {
+            "development": {
+              "browserTarget": "fizzfleetShopApp:build:development",
+              "serverTarget": "fizzfleetShopApp:server:development"
+            },
+            "production": {
+              "browserTarget": "fizzfleetShopApp:build:production",
+              "serverTarget": "fizzfleetShopApp:server:production"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "options": {
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "fizzfleetShopApp:build:production",
+              "serverTarget": "fizzfleetShopApp:server:production"
+            },
+            "development": {
+              "browserTarget": "fizzfleetShopApp:build:development",
+              "serverTarget": "fizzfleetShopApp:server:development"
+            }
+          },
+          "defaultConfiguration": "production"
+        }
 			}
 		}
 	},

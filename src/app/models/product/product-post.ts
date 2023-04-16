@@ -1,7 +1,7 @@
 export interface ProductPost {
-    publishId: string;
-    cover: string;
+    publishId: number;
+    coverUrl: string;
     title: string;
     price: number;
-    categories: string[];
+    categories?: string[];
 }

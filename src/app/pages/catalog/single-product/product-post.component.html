@@ -2,7 +2,7 @@
     <div class="card text-center card-product">
         <div class="card-product__img">
             <img
-                [src]="post.cover"
+                [src]="post.coverUrl"
                 data-mdb-toggle="animation"
                 data-mdb-animation-start="onScroll"
                 data-mdb-animation="fade-in"
@@ -19,7 +19,7 @@
             </ul>
         </div>
         <div class="card-body">
-            <p *NgFor="let category of categories">{{ category }}</p>
+            <p *NgFor="let category of post.categories">{{ category }}</p>
             <h4 class="card-product__title">
                 <a href="#" [id]="post.publishId">{{ post.title }}</a>
             </h4>
