@@ -1,29 +1,29 @@
-<div class="col-md-6 col-lg-4">
-    <div class="card text-center card-product">
-        <div class="card-product__img">
-            <img
-                [src]="post.coverUrl"
-                data-mdb-toggle="animation"
-                data-mdb-animation-start="onScroll"
-                data-mdb-animation="fade-in"
-                class="card-img animation fade-in"
-                style="visibility: visible; animation-duration: 1000ms"
-            />
-            <ul class="card-product__imgOverlay">
-                <li>
-                    <button><i class="ti-search"></i></button>
-                </li>
-                <li>
-                    <button><i class="ti-shopping-cart"></i></button>
-                </li>
-            </ul>
-        </div>
-        <div class="card-body">
-            <p *NgFor="let category of post.categories">{{ category }}</p>
-            <h4 class="card-product__title">
-                <a href="#" [id]="post.publishId">{{ post.title }}</a>
-            </h4>
-            <p class="card-product__price">{{ post.price }}</p>
-        </div>
-    </div>
+<div *ngIf="post" class="card text-center card-product">
+	<div class="card-product__img">
+		<img
+			[src]="post.coverUrl"
+			data-mdb-toggle="animation"
+			data-mdb-animation-start="onScroll"
+			data-mdb-animation="fade-in"
+			class="card-img animation fade-in"
+			style="visibility: visible; animation-duration: 1000ms"
+		/>
+		<ul class="card-product__imgOverlay">
+			<li>
+				<button><i class="ti-search"></i></button>
+			</li>
+			<li>
+				<button><i class="ti-shopping-cart"></i></button>
+			</li>
+		</ul>
+	</div>
+	<div class="card-body">
+		<ng-template *NgFor="let category of post.categories">{{
+			category
+		}}</ng-template>
+		<h4 class="card-product__title">
+			<a href="/catalog/post.publishId">{{ post.title }}</a>
+		</h4>
+		<p class="card-product__price">{{ post.price }}</p>
+	</div>
 </div>

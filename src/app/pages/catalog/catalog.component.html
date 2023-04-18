@@ -220,7 +220,7 @@
 
 				<section class="lattest-product-area pb-40 category-list">
 					<div class="row">
-						<!--<app-post [post]="post" *NgFor="let post of catalog"></app-post>-->
+						<app-post *ngFor="let post of catalog" [post]="post" class="col-md-6 col-lg-4"></app-post>
 					</div>
 				</section>
 			</div>
