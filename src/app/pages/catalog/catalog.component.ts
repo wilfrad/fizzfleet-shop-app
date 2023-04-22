@@ -9,15 +9,14 @@ import { productPosts } from './products-list';
 })
 
 export class CatalogComponent {
-  catalog: ProductPost[] = productPosts;
-  http = inject(HttpClient);
+  catalog!: ProductPost[];
   
+  constructor (private http: HttpClient) {}
+
   ngOnInit() {
-    this.catalog.forEach(post => console.log(post.publishId));
-    /*this.http.get<ProductPost[]>('https://localhost:7271/api/Catalog')
+    this.http.get<ProductPost[]>('https://localhost:7271/api/Catalog')
       .subscribe(posts => {
         this.catalog = posts;
-        console.log(posts);
-      });*/
+      });
   }
 }

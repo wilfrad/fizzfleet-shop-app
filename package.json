@@ -7,7 +7,8 @@
     "test": "ng test",
     "dev": "ng run fizzfleetShopApp:serve-ssr",
     "start": "node dist/fizzfleetShopApp/server/main.js",
-    "build": "ng build && ng run fizzfleetShopApp:server",
+    "build": "ng build && ng run fizzfleetShopApp:serve-ssr",
+    "a": "ng serve --proxy-config src/proxy.conf.json",
     "prerender": "ng run fizzfleetShopApp:prerender"
   },
   "private": true,

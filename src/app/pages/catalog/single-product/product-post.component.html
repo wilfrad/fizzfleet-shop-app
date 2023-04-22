@@ -10,7 +10,7 @@
 		/>
 		<ul class="card-product__imgOverlay">
 			<li>
-				<button><i class="ti-search"></i></button>
+				<button routerLink="/catalog/{{ post.publishId }}"><i class="ti-eye"></i></button>
 			</li>
 			<li>
 				<button><i class="ti-shopping-cart"></i></button>
@@ -18,11 +18,9 @@
 		</ul>
 	</div>
 	<div class="card-body">
-		<ng-template *NgFor="let category of post.categories">{{
-			category
-		}}</ng-template>
+		<p>{{ post.category }}</p>
 		<h4 class="card-product__title">
-			<a href="/catalog/post.publishId">{{ post.title }}</a>
+			<a href="/catalog/{{ post.publishId }}">{{ post.title }}</a>
 		</h4>
 		<p class="card-product__price">{{ post.price }}</p>
 	</div>

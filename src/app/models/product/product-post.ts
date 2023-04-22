@@ -3,5 +3,5 @@ export interface ProductPost {
     coverUrl: string;
     title: string;
     price: number;
-    categories?: string[];
+    category: string;
 }
