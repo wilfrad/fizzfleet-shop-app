@@ -260,10 +260,12 @@ function CatalogComponent_app_post_168_Template(rf, ctx) {
 class CatalogComponent {
   constructor(http) {
     this.http = http;
+    this.apiResource = "https://localhost:7271/api/Resource/image/0?fileName=";
   }
   ngOnInit() {
-    this.http.get('https://localhost:7271/api/Catalog').subscribe(posts => {
+    this.http.get('https://localhost:7271/api/Catalog/0-0?offSet=1&limit=100').subscribe(posts => {
       this.catalog = posts;
+      this.catalog.forEach(post => post.cover.fileName = `${this.apiResource}${post.cover.fileName}`);
     });
   }
 }
@@ -506,7 +508,7 @@ function ProductPostComponent_div_0_Template(rf, ctx) {
   if (rf & 2) {
     const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("src", ctx_r0.post.coverUrl, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("src", ctx_r0.post.cover.fileName, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate1"]("routerLink", "/catalog/", ctx_r0.post.publishId, "");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);

@@ -1,6 +1,8 @@
+import { Image } from './product-view'
+
 export interface ProductPost {
     publishId: number;
-    coverUrl: string;
+    cover: Image;
     title: string;
     price: number;
     category: string;

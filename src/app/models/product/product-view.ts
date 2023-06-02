@@ -9,12 +9,13 @@ export class ProductView {
     specs: Spec[] = [];
 }
 
-export class Image {
-    coverUrl!: string;
-    thumbnailUrl!: string;
+export interface Image {
+    fileName: string;
+    thumbnail?: string;
+    image: string;
 }
 
-export class Spec {
-    name: string = '';
-    value: string = '';
+export interface Spec {
+    name: string;
+    value: string;
 }
